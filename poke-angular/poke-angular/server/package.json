@@ -1,0 +1,13 @@
+{
+  "name": "poke-relay",
+  "version": "1.0.0",
+  "description": "Relay server for the Poke extension: presence, poke routing and a shared GIF library.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "license": "MIT"
+}

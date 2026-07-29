@@ -1,0 +1,29 @@
+{
+  "name": "poke-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension for poking teammates. Angular popup, plus the service worker and content script bundles.",
+  "scripts": {
+    "build": "ng build && node build.mjs",
+    "build:dev": "ng build --configuration development && node build.mjs --dev",
+    "test": "npm run build && node smoke-test.mjs",
+    "ng": "ng"
+  },
+  "dependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/compiler": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/platform-browser": "^22.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.0.0",
+    "@angular/cli": "^22.0.0",
+    "@angular/compiler-cli": "^22.0.0",
+    "@types/chrome": "^0.0.300",
+    "esbuild": "^0.25.0",
+    "jsdom": "^29.1.1",
+    "typescript": "~5.9.2"
+  }
+}
