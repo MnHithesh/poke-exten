@@ -219,7 +219,8 @@ async function playChime(): Promise<void> {
 /* ------------------------------------------------------------- poke arrival */
 
 async function deliverPoke(msg: PokeMessage): Promise<void> {
-  const gif = await resolveGif(msg.gif);
+  // const gif = await resolveGif(msg.gif);
+   const gif = await resolveGif(settings.gif?.url ?? null);
   void playChime();
 
   chrome.notifications.create(`poke-${msg.fromId}-${msg.at}`, {

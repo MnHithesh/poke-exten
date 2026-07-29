@@ -6,7 +6,8 @@ import { GifItem } from '../core/models';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="micro-row">
-      <span class="micro">GIF that lands on their screen</span>
+      <!-- <span class="micro">GIF that lands on their screen</span> -->
+       <span class="micro">Your GIF — shown when someone pokes you</span>
       <button class="linky" type="button" (click)="reload.emit()">Refresh</button>
     </div>
 
